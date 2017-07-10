@@ -1,0 +1,18 @@
+---
+layout: default
+title: 2015 Education IPOs
+---
+
+<!-- Deadpool -->
+{% assign ipos = site.data.2015 %}
+{% assign ipos = ipos | sort:"Name" %}
+
+<!-- Document -->
+
+{% for ipo in ipos %}
+
+<ul>
+<li><strong>{{ ipo.Name }}</strong> (<a href="{{ ipo.URL }}">News Link</a>)</li>
+</ul>
+
+{% endfor %}
